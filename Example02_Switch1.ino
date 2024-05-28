@@ -29,7 +29,13 @@ extern "C" homekit_characteristic_t cha_switch_on4;
 
 void setup() {
   Serial.begin(115200);
+  
+  // Uncomment these lines to reset HomeKit pairing
+   //homekit_server_reset();
+   //ESP.restart();
+  
   wifi_connect(); // Defined in wifi_info.h
+  
   my_homekit_setup();
 }
 
