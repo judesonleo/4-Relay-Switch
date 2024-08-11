@@ -10,13 +10,14 @@ homekit_characteristic_t cha_switch_on = HOMEKIT_CHARACTERISTIC_(ON, false);
 homekit_characteristic_t cha_switch_on2 = HOMEKIT_CHARACTERISTIC_(ON, false);
 homekit_characteristic_t cha_switch_on3 = HOMEKIT_CHARACTERISTIC_(ON, false);
 homekit_characteristic_t cha_switch_on4 = HOMEKIT_CHARACTERISTIC_(ON, false);
+homekit_characteristic_t cha_name = HOMEKIT_CHARACTERISTIC_(NAME, "4c Switch");
 
 homekit_accessory_t *accessories[] = {
     // Switch 1
     HOMEKIT_ACCESSORY(.id=1, .category=homekit_accessory_category_switch, .services=(homekit_service_t*[]) {
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
             HOMEKIT_CHARACTERISTIC(NAME, "Switch1"),
-            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Arduino HomeKit"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Judeson HomeKit"),
             HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "0123456"),
             HOMEKIT_CHARACTERISTIC(MODEL, "ESP8266/ESP32"),
             HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "1.0"),
@@ -34,7 +35,7 @@ homekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id=2, .category=homekit_accessory_category_switch, .services=(homekit_service_t*[]) {
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
             HOMEKIT_CHARACTERISTIC(NAME, "Switch2"),
-            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Arduino HomeKit"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Judeson HomeKit"),
             HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "0123456"),
             HOMEKIT_CHARACTERISTIC(MODEL, "ESP8266/ESP32"),
             HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "1.0"),
@@ -52,7 +53,7 @@ homekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id=3, .category=homekit_accessory_category_switch, .services=(homekit_service_t*[]) {
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
             HOMEKIT_CHARACTERISTIC(NAME, "Switch3"),
-            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Arduino HomeKit"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Judeson HomeKit"),
             HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "0123456"),
             HOMEKIT_CHARACTERISTIC(MODEL, "ESP8266/ESP32"),
             HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "1.0"),
@@ -70,7 +71,7 @@ homekit_accessory_t *accessories[] = {
     HOMEKIT_ACCESSORY(.id=4, .category=homekit_accessory_category_switch, .services=(homekit_service_t*[]) {
         HOMEKIT_SERVICE(ACCESSORY_INFORMATION, .characteristics=(homekit_characteristic_t*[]) {
             HOMEKIT_CHARACTERISTIC(NAME, "Switch4"),
-            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Arduino HomeKit"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Judeson HomeKit"),
             HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "0123456"),
             HOMEKIT_CHARACTERISTIC(MODEL, "ESP8266/ESP32"),
             HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "1.0"),
